@@ -1,0 +1,265 @@
+/* Opcional: Para asegurarte de que el header cubre toda la anchura de la pantalla */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #8783ff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/*-------------productos-------------------*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 60px; /* Añadido para evitar que el header tape el contenido */
+}
+
+.item {
+    width: 30%; /* Ajusta el ancho de cada elemento para mostrar tres por fila */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item a {
+    display: block;
+    text-align: center;
+    background-color: #6297ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 0;
+    border-radius: 3px;
+}
+
+.item a:hover {
+    background-color: #cf8bda;
+}
+
+/*-------------detalles-------------------*/
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.imagen {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.informacion {
+    flex: 2;
+}
+
+.informacion h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.regresar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6297ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.regresar-btn:hover {
+    background-color: #cf8bda;
+}
+
+/*-------------login-------------------*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6297ff;
+}
+
+/* ESTILO CARRITO*/
+/* Estilo básico para la barra de navegación */
+.barra {
+    background-color: #8783ff;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilo para la tabla dentro de la barra de navegación */
+.accesorapido {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para las celdas de la tabla */
+.accesorapido th {
+    padding: 10px 20px;
+}
+
+/* Estilo para los enlaces */
+.accesorapido a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+.accesorapido a:hover {
+    color: #ddd;
+}
+
+/* Estilo para ajustar el diseño en dispositivos móviles */
+@media (max-width: 768px) {
+    .accesorapido th {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+/* Estilo básico para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para el contenedor de productos */
+.productos {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Margin para separar los productos verticalmente */
+    padding: 20px;
+    text-align: center;
+    width: 80%; /* Ajusta el ancho de los productos */
+    max-width: 600px; /* Máximo ancho para evitar productos demasiado grandes */
+}
+
+/* Estilo para el nombre del producto */
+.productos h1:first-of-type {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el precio del producto */
+.productos h1:last-of-type {
+    font-size: 1.2em;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen del producto */
+.productos img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por la imagen */
+.productos img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para el contenedor principal de productos */
+.productos-container {
+    display: flex;
+    flex-direction: column; /* Asegura que los productos se apilen uno debajo del otro */
+    align-items: center; /* Centra los productos horizontalmente */
+    padding: 20px;
+}
+
+.cajadetotal {
+    background-color: #cf8bda;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo para el texto del footer */
+footer p {
+    margin: 10px 0;
+}
+
+/* Estilo para el enlace del footer */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para la imagen del footer */
+footer img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-bottom: 10px;
+}
